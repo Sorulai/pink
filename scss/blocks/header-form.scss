@@ -1,0 +1,48 @@
+.page-header__form{
+	min-height: 236px;
+}
+.main-nav--nojs-form{
+	position:relative;
+}
+.page-header__form-dicr{
+	display:block;
+	width: 280px;
+	font-size:24px;
+	line-height:30px;
+	text-align: center;
+	margin:0 auto;
+	padding-top: 33px;
+	color:#fff;
+}
+
+@media (min-width: $tablets){
+	.page-header__form{
+		min-height: 440px;
+	}
+	.page-header__form-dicr{
+	display:block;
+	width: 620px;
+	font-size:50px;
+	line-height:60px;
+	text-align: center;
+	margin:0 auto;
+	padding-top: 77px;
+	color:#fff;
+}
+}
+
+@media (min-width: $desktop){
+	.page-header__form{
+		min-height: 393px;
+	}
+	.page-header__form-dicr{
+	display:block;
+	width: 780px;
+	font-size:50px;
+	line-height:60px;
+	text-align: center;
+	margin:0 auto;
+	padding-top: 70px;
+	color:#fff;
+}
+}

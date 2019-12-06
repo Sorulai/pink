@@ -1,0 +1,166 @@
+
+.reviews{
+	margin-top: 45px;
+}
+.reviews__item {
+	width: 280px;
+	margin:0 auto;
+}
+.reviews__prev,
+.reviews__next{
+	display:none;
+}
+.reviews__item{
+	text-align: center;
+}
+.reviews__name{
+	font-size: 18px;
+	line-height:30px;
+	
+	font-style:normal;
+	font-weight: bold;
+	&--tablet{
+		display:none;
+	}
+}
+.reviews__per{
+	display:block;
+	margin:0;
+	font-size: 14px;
+	line-height:30px;
+	margin-top: 18px;
+	color:$header-color;
+}
+.reviews__disr{
+	display:none;
+}
+.reviews__toggles{
+	margin:0;
+	text-align: center;
+
+}
+.reviews__item--none,
+.reviews__item--none-two{
+	display:none;
+}
+.slider__toggle{
+	background-color: rgba(40,54,69,0.3);
+	width: 6px;
+	height:6px;
+	cursor: pointer;
+	border-radius:50%;
+	&--active{
+		background-color:#fff;
+		width: 12px;
+		height:12px;
+		border:3px solid #283645;
+	}
+}
+
+@media (min-width: $tablets) {
+.reviews__item {
+	width: 620px;
+	margin:0 auto;
+}
+.reviews__name{
+	display:none;
+	&--tablet{
+		display:block;
+		font-size: 20px;
+		line-height:30px;
+		margin-top:40px;
+	}
+}
+.reviews__disr{
+	display:block;
+	font-size: 14px;
+	line-height:30px;
+	margin-top:11px;
+	margin-bottom: 40px;
+}
+.reviews__per{
+	margin:0;
+	font-size: 18px;
+	line-height:30px;
+}
+}
+
+@media (min-width: $desktop) {
+	.reviews{
+		margin-top:190px;
+	}
+	.reviews__wrapper {
+		width: 940px;
+		margin:0 auto;
+	}
+
+	.reviews__item {
+	width: 720px;
+	margin:0 100px;
+	order:2;
+	position:relative;
+}
+.reviews__prev,
+.reviews__next{
+	display:block;
+}
+.reviews__toggles{
+	display:none;
+}
+.reviews__item--none,
+.reviews__item--none-two {
+	display:none;
+}
+.reviews__list {
+	display:flex;
+	justify-content: space-between;
+}
+.reviews__prev{
+	order: 1;
+	width: 60px;
+	margin-bottom:100px;
+	cursor:pointer;
+}
+.reviews__next{
+	order:3;
+	width: 60px;
+	margin-bottom:100px;
+	cursor:pointer;
+}
+
+.reviews__name--tablet{
+	font-size: 24px;
+	line-height:30px;
+	margin-top:43px;
+}
+.reviews__disr{
+	font-size: 18px;
+	line-height:30px;
+	margin-top:12px;
+}
+.reviews__prev span,
+.reviews__next span{
+	@include visually-hidden;
+}
+.icon-left-arrow,
+.icon-arrow-right{
+	fill: rgba(40,54,69,0.3);
+
+&:hover{
+	fill: rgb(40,54,69);
+}
+}
+
+.reviews__item:before{
+	content:"";
+	position:absolute;
+	width:79px;
+	height:63px;
+	top:-100px;
+	left:285px;
+
+	background-image: url('../img/quotes.png');
+
+}
+
+}

@@ -1,0 +1,137 @@
+.map--wparrep{
+	width: 280px;
+	margin:0 auto;
+}
+.map__list {
+	@include reset-list;
+	text-align: center;
+}
+.question{
+	font-size: 24px;
+	line-height:30px;
+	color:$header-color;
+	margin:0;
+	text-align: center;
+	margin:0;
+	font-weight: 100;
+	&--last{
+		margin-bottom: 30px;
+	}
+}
+.map__title{
+	font-size: 18px;
+	line-height:24px;
+	color:$header-color;
+	font-weight:bold;
+	display:inherit;
+}
+.map__dicr{
+	display:block;
+	font-size: 24px;
+	line-height:30px;
+	color:$color-link;
+	font-weight:100;
+	margin-bottom: 30px;
+}
+.img__crop{
+	width: 100%;
+	height:200px;
+	position:relative;
+	background:url('../img/bg-map-mobile@1x.jpg') no-repeat center center;
+	background-size:cover;
+}
+
+.img__crop:after{
+	content:"";
+	position:absolute;
+	width: 100%;
+	height:70px;
+
+	top:-1px;
+	background-image: url('../img/Без названия.svg');
+}
+@media (min-width: $tablets) {
+	.map{
+		padding-top:50px;
+	}
+.map--wparrep{
+	width: 620px;
+	margin:0 auto;
+}
+.map__list{
+	display:flex;
+	flex-wrap: wrap; 
+}
+.map__item{
+	width: 300px;
+	&--last{
+		margin:0 auto;
+	}
+}
+.question{
+	font-size: 40px;
+	line-height:50px;
+	&--last{
+		margin-bottom: 50px;
+	}
+
+}
+.img__crop{
+	width: 100%;
+	height:374px;
+	position:relative;
+	background:url('../img/bg-map-tablet@1x.jpg') no-repeat center center;
+	background-size:cover;
+}
+
+.img__crop:after{
+	content:"";
+	position:absolute;
+	width: 100%;
+	height:70px;
+
+	top:-1px;
+	background-image: url('../img/Без названия.svg');
+}
+}
+
+@media (min-width: $desktop){
+	.map{
+		padding-top:70px;
+	}
+	.map--wparrep{
+	width: 940px;
+	margin:0 auto;
+}
+.map__list{
+	display:flex;
+	flex-wrap: wrap; 
+}
+.map__item{
+	width: 300px;
+}
+.question{
+	font-size: 50px;
+	line-height:60px;
+	&--last{
+		margin-bottom: 66px;
+	}
+}
+	.img__crop{
+	width: 100%;
+	height:503px;
+	position:relative;
+	background:url('../img/bg-map-desktop@1x.jpg') no-repeat center center;
+	background-size:cover;
+}
+
+.img__crop:after{
+	content:"";
+	position:absolute;
+	width: 100%;
+	height:105px;
+
+	top:-1px;
+	background-image: url('../img/Без названия.svg');
+}
+}

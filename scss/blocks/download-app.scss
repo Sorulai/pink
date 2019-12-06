@@ -1,0 +1,157 @@
+.download-app__header {
+	display:none;
+}
+
+.download-app{
+padding-top: 463px;
+position:relative;
+&--color{
+	background-color: $header-color;
+	position:relative;
+	z-index:2;
+
+}
+&--wrapper{
+	width: 280px;
+	margin:0 auto;
+}
+&--wrapper-active{
+	padding-top:30px;
+}
+}
+
+.download-app__list {
+	@include reset-list;
+	display:flex;
+	justify-content:space-around;
+	flex-wrap: wrap;
+	margin:0 auto;
+	align-items:center;
+	margin-top: 32px;
+	margin-bottom: 24px;
+	position:relative;
+
+}
+.download-app:before{
+	content:"";
+	position:absolute;
+
+	width: 259px;
+	height:314px;
+
+	top:170px;
+	left:0;
+
+	background-image:url('../img/heand-mobile.png');
+}
+.download-app__link {
+	display:block;
+	color:#fff;
+	line-height:18px;
+	font-weight: bold;
+	text-decoration:none;
+	padding:18px 40px;
+	cursor: pointer;
+	border:2px solid #fff;
+	border-radius: 30px;
+	text-align: center;
+	&:hover{
+		background-color:#fff;
+		color:$color-link;
+		box-shadow: 2px 2px 5px 2px #000;
+	}
+	&:active{
+		background-color:#fff;
+		color:rgba(210,40,86,0.3);
+		box-shadow:none;
+	}
+}
+.download-app__legend{
+	color:#fff;
+	line-height:24px;
+	font-size: 14px;
+	margin: 0;
+   text-align: center;
+   padding-bottom: 30px;
+   font-weight: lighter;
+   width: 280px;
+
+}
+
+
+
+@media (min-width: $tablets){
+.download-app{
+	padding:0;
+	padding-top:211px;
+	&--color{
+		background-color:transparent;
+	}
+	&--wrapper{
+		width: 620px;
+	margin:0 auto;
+	}
+	&--wrapper-active{
+			width: 300px;
+	}
+}
+.download-app__header{
+	display:block;
+	font-size: 40px;
+	line-height:40px;
+	color:#fff;
+	font-weight:lighter;
+	width: 215px;
+	margin:0;
+	text-align: center;
+	margin-left:40px;
+	margin-bottom:40px;
+
+}
+.download-app__legend{
+	font-size: 16px;
+	width: 300px;
+}
+.download-app:before{
+	content:"";
+	position:absolute;
+
+	width: 640px;
+	height:545px;
+
+	bottom:0px;
+	left:70px;
+
+	background-image:url('../img/heand-tablet.png');
+}
+}
+
+
+@media (min-width: $desktop){
+	.download-app{
+	width: 940px;
+	margin:0 auto;
+	padding-top:228px;
+}
+.download-app--wrapper{
+	width: 370px;
+	margin:0;
+}
+.download-app:before{
+	content:"";
+	position:absolute;
+
+	width: 940px;
+	height:645px;
+
+	bottom:0px;
+	left:0;
+
+	background-image:url('../img/head-desktop.png');
+}
+.download-app__header{
+	font-size:50px;
+	width: 300px;
+	margin-left:0;
+}
+}

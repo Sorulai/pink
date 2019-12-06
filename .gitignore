@@ -1,0 +1,8 @@
+*.pdf
+*.ai
+*.log
+*.pdf
+*.psd
+css/*.css
+node_modules/
+build/

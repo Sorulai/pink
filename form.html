@@ -1,0 +1,266 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta
+name="viewport"
+content="width=device-width,initial-scale=1">
+	<title>Form</title>
+	<link rel="stylesheet" href="css/style.min.css" type="text/css">
+	<link href="https://fonts.googleapis.com/css?family=Open+Sans&display=swap" rel="stylesheet">
+</head>
+<body>
+<div style="display: none">
+	<include src="build/img/sprite.svg"></include>
+</div>
+
+	<header class="page-header page-header__form">
+		<div class="page-header--wrapper">
+		<nav class="main-nav main-nav--closed main-nav--nojs main-nav--nojs-form">
+			<div class="main-nav--wrapper">
+			<button class="main-nav__toggle" type="button">
+				<svg class="icon-burger" width="50" height="24">
+						<use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="#icon-burger"></use>
+					</svg>
+					<svg class="icon-close" width="24" height="23">
+						<use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="#icon-close"></use>
+					</svg>
+				<span class="visually-hidden">Открыть меню</span></button>
+			<ul class="main-nav__list site-list">
+				<li class="site-list__item site-list__item--logo"><a href="#">
+					<svg class="logo-pink-white-mobile" width="75" height="22">
+						<use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="#icon-logotype-white-mobile"></use>
+					</svg>
+					<svg class="logo-pink-white-tablet" width="147" height="40">
+						<use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="#icon-logotype-white-tablet"></use>
+					</svg>
+					<svg class="logo-pink-white-desktop" width="147" height="40">
+						<use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="#icon-logotype-white-desktop"></use>
+					</svg>
+				</a></li>
+				<li class="site-list__item"><a href="index.html">Главная</a></li>
+				<li class="site-list__item"><a href="photo.html">Фотографии</a></li>
+				<li class="site-list__item site-list__item--active"><a>Конкурс</a></li>
+				<li class="site-list__item"><a href="#">HTML Academy</a></li>
+				
+			</ul>
+			</div>
+		</nav>
+		<span class="page-header__form-dicr">Конкурс на самое безбашенное путешествие с Пинк</span>
+	</header>
+	<main>
+	<section class="form">
+		<div class="form__form-per--wrapper">
+		<p class="form-per">Поделитесь своей историей и получите шанс выиграть ценный приз — 1000 миль на вашу бонусную карту! </p>
+		<span class="form-per--span">Пожалуйста, заполните форму ниже:</span>
+	</div>
+		<form class="main-form" action="https://echo.htmlacademy.ru" method="post">
+			<fieldset class="main-form--none-filedset">
+				
+				<legend class="main-form--none-legend">Личная информация</legend>
+
+				<label class="main-form__label" for="last-name">Фамилия</label>
+				<input class="last--name" type="text" placeholder="Укажите фамилию*" name="last-name" id="last-name" required>
+
+				<label class="main-form__label" for="first-name">Имя</label>
+				<input class="first--name" type="text" placeholder="Укажите ваше имя*" name="first-name" id="first-name" required>
+
+				<label class="main-form__label" for="last-last-name">Отчество</label>
+				<input class="last--last--name" type="text" placeholder="Ну и отчество тоже" name="last-last-name" id="last-last-name">
+				
+
+			</fieldset>
+				<div class="fieldset--wrapper-app">
+			<fieldset class="field-one">
+
+				<legend class="field-one__lagend">С каким приложением путешествовали?</legend>
+				
+				<label class="field-one__label" for="android">
+					<input class="field-one__input" type="radio" name="apps" id="android" checked>
+					<span class="radio-indicator"></span>
+
+					Pink для iOS
+				</label>
+
+				<label class="field-one__label" for="IOS">
+					<input class="field-one__input" type="radio" name="apps" id="IOS">
+					<span class="radio-indicator"></span>
+
+
+					Pink на Android
+				</label>
+
+				<label class="field-one__label" for="WP">
+					<input class="field-one__input" type="radio" name="apps" id="WP">
+					<span class="radio-indicator"></span>
+
+
+
+					Windows Phone
+
+				</label>
+			
+			</fieldset></div>
+
+			<fieldset class="field-two">
+				
+				<legend class="field-two__legend">Контактная информация</legend>
+				<label class=" field-two__label" for="number-phone">номер телефона</label>
+				<input class="field-two__input" type="phone" name="phone" id="number-phone" placeholder="Номер, пожалуйста">
+				<label class=" field-two__label" for="number-email">Адрес почты</label>
+				<input class="field-two__input" type="email" name="email" id="number-email" placeholder="Введите почту *" required>
+				
+			
+			</fieldset>
+
+			<fieldset class="field-two--tablet">
+				
+				<legend class="field-two__legend">Контактная информация</legend>
+				<label class=" field-two__label field-two__label--desktop" for="number-phone">
+					<input class="field-two__input field-two__input--border" type="phone" name="phone" id="number-phone" placeholder="Номер, пожалуйста">
+				номер телефона</label>
+				
+				<label class=" field-two__label field-two__label--desktop" for="number-email"><input class="field-two__input field-two__input--border" type="email" name="email" id="number-email" placeholder="Введите почту *" required>
+					Адрес почты
+				</label>
+				
+				
+			
+			</fieldset>
+<div class="fieldset--wrapper-trip">
+		<fieldset class="field-three">
+			
+			<legend class="field-three__legend">Ваши безбашенные достижения в путешествии</legend>
+			<div class="field-three--flex">
+			<label class="field-three__label" for="one">
+				<input class="field-three__input" type="checkbox" name="trevel" id="one" checked>
+				<span class="check-indicator"></span>
+
+
+			Сделал селфи с акулой</label>
+
+			
+			
+
+			
+			<label class="field-three__label" for="three">
+				<input class="field-three__input" type="checkbox" name="trevel" id="three" checked>
+				<span class="check-indicator"></span>
+
+
+			Видел Чака Норриса</label>
+
+			<label class="field-three__label" for="two">
+				<input class="field-three__input" type="checkbox" name="trevel" id="two">
+				<span class="check-indicator"></span>
+
+
+			Удержал башню</label>
+
+			
+			<label class="field-three__label" for="four">
+				<input class="field-three__input" type="checkbox" name="trevel" id="four" checked>
+				<span class="check-indicator"></span>
+				Обгорел на пляже
+
+
+			</label>
+
+			
+			<label class="field-three__label" for="five">
+				<input class="field-three__input" type="checkbox" name="trevel" id="five">
+				<span class="check-indicator"></span>
+
+
+			Накупил сувениров</label>
+
+			
+			<label class="field-three__label" for="six">
+				<input class="field-three__input" type="checkbox" name="trevel" id="six">
+				<span class="check-indicator"></span>
+
+
+			Разгромил отель</label>
+			</div>
+		</fieldset></div>
+
+		<fieldset class="field-four">
+			
+			<legend class="field-four__legend">Опишите свои эмоции</legend>
+			<textarea class="field__textarea" name="review" cols="30" rows="10" placeholder="Можно прям в красках, не стесняясь в выражениях"></textarea>
+		
+		</fieldset>
+		<div class="btn-form--wrapper">
+			<button class="btn btn-form" type="submit">Отправить форму</button>
+			<span class="dicr-form"><b>*</b> — обязательные поля</span>
+			<span class="dicr-form-desktop"><b>*</b> — обязательные для заполнения поля</span>
+		</div>
+		
+		</form>
+		
+	</section>
+	</main>
+	<footer class="page-footer page-footer--form">
+		<div class="page-footer--wrapper">
+			<div class="page-footer__coopyritng">
+			<a class="page-footer__link" href="#">
+				<svg class="icon-logo-fotter" >
+						<use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="#icon-logo-fotter"></use>
+					</svg>
+
+					<svg class="icon-fotter-desk" >
+						<use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="#icon-fotter-desk"></use>
+					</svg>
+			</a>
+			</div>
+			<div class="page-footer__social social">
+			<ul class="page-footer__list">
+				<li class="page-footer__item">
+					<a class="page-footer__item__link page-footer__item__link--tw" href="#">
+						<svg class="icon-twwiter">
+						<use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="#icon-twwiter"></use>
+					</svg>
+
+
+
+					Мы в твиттере</a>
+				</li>
+				<li>
+					<a class="page-footer__item__link page-footer__item__link--fb" href="#">
+						<svg class="icon-facebook">
+						<use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="#icon-facebook"></use>
+					</svg>
+
+
+
+					Мы в фейсбуке</a>
+				</li>
+				<li>
+					<a class="page-footer__item__link page-footer__item__link--yt" href="#">
+						<svg class="icon-youtube">
+						<use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="#icon-youtube"></use>
+					</svg>
+
+
+
+					Мы в ютубе</a>
+				</li>
+				
+			</ul>
+		</div>
+			<div class="page-footer__htmlacademy--wraper">
+			<div class="page-footer__htmlacademy">
+				<span class="page-footer__htmlacademy--dicr">Разработано</span>
+				<a class="page-footer__htmlacademy--logo" href="#">
+					<svg class="icon-html" >
+						<use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="#icon-html"></use>
+					</svg>
+
+				</a>
+			</div>
+		</div>
+		</div>
+		</footer>
+		<script type="text/javascript" src="js/main.js"></script>
+</body>
+</html>

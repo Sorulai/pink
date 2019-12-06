@@ -1,0 +1,112 @@
+.article {
+	display:none;
+}
+
+@media (min-width: $tablets) {
+	.article{
+		display:block;
+	}
+	.article-list--wraper:before{
+		content:"";
+
+		position:absolute;
+		width: 238px;
+		height:276px;
+
+		top:-44px;
+		left:0;
+
+		background-image:url('../img/timer.png');
+	}
+	.article-list--wraper{
+		width: 620px;
+		margin:0 auto;
+		position:relative;
+	}
+	.article--wrapper{
+		width: 310px;
+		text-align: left;
+		margin-top: 100px;
+		margin-bottom: 132px;
+		margin-left:330px;
+
+	}
+	.article__title{
+		font-size: 30px;
+		line-height:36px;
+		font-weight: bold;
+		margin:0;
+		margin-bottom: 20px;
+
+	}
+	.article__par{
+		display:block;
+		font-size: 14px;
+		line-height:24px;
+		margin-bottom: 16px;
+
+	}
+	.article__link{
+		display:block;
+		color:$color-link;
+		font-size: 14px;
+		line-height:24px;
+		&:hover{
+			color:$header-color;
+		}
+		&:active{
+			color:rgba(40,54,69,0.3);
+		}
+	}
+}
+
+@media (min-width: $desktop) {
+	.article{
+		display:block;
+		background-color: $color-bg;
+
+	}
+	.article-list--wraper:before{
+		content:"";
+
+		position:absolute;
+		width: 298px;
+		height:345px;
+
+		top:65px;
+
+		background-image:url('../img/timer-desktop.png');
+	}
+	.article-list--wraper{
+		width: 940px;
+		margin:0 auto;
+		position:relative;
+	}
+	.article--wrapper{
+		min-width: 600px;
+		padding-top:162px;
+		padding-bottom: 124px;
+		padding-left:400px;
+		margin:0;
+		margin-left:0;
+	}
+	.article__title{
+		font-size: 30px;
+		line-height:36px;
+		font-weight: bold;
+		margin:0;
+		margin-bottom: 30px;
+
+	}
+	.article__par{
+		display:block;
+		font-size: 18px;
+		line-height:30px;
+		margin-bottom: 38px;
+
+	}
+	.article__link{
+		font-size: 18px;
+		line-height:30px;
+	}
+}

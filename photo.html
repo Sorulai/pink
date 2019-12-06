@@ -1,0 +1,263 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta
+name="viewport"
+content="width=device-width,initial-scale=1">
+	<title>Photo</title>
+	<link rel="stylesheet" href="css/style.min.css" type="text/css">
+	<link href="https://fonts.googleapis.com/css?family=Open+Sans&display=swap" rel="stylesheet">
+</head>
+<body>
+	<div style="display: none">
+	<include src="build/img/sprite.svg"></include>
+</div>
+
+<header class="page-header page-header__form">
+		<div class="page-header--wrapper">
+		<nav class="main-nav main-nav--closed main-nav--nojs main-nav--nojs-form">
+			<div class="main-nav--wrapper">
+			<button class="main-nav__toggle" type="button">
+				<svg class="icon-burger" width="50" height="24">
+						<use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="#icon-burger"></use>
+					</svg>
+					<svg class="icon-close" width="24" height="23">
+						<use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="#icon-close"></use>
+					</svg>
+				<span class="visually-hidden">Открыть меню</span></button>
+			<ul class="main-nav__list site-list">
+				<li class="site-list__item site-list__item--logo"><a href="#">
+					<svg class="logo-pink-white-mobile" width="75" height="22">
+						<use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="#icon-logotype-white-mobile"></use>
+					</svg>
+					<svg class="logo-pink-white-tablet" width="147" height="40">
+						<use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="#icon-logotype-white-tablet"></use>
+					</svg>
+					<svg class="logo-pink-white-desktop" width="147" height="40">
+						<use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="#icon-logotype-white-desktop"></use>
+					</svg>
+				</a></li>
+				<li class="site-list__item"><a href="index.html">Главная</a></li>
+				<li class="site-list__item site-list__item--active"><a>Фотографии</a></li>
+				<li class="site-list__item "><a href="form.html">Конкурс</a></li>
+				<li class="site-list__item"><a href="#">HTML Academy</a></li>
+				
+			</ul>
+			</div>
+		</nav>
+		<span class="page-header__form-dicr page-header__photo-dicr">Фотографии пользователей</span>
+	</header>
+
+	<main class="page-main__photo">
+		<section class="catalog__photo">
+
+			<p class="catalog__photo--per">Взгляните на фотографии, которые выкладывают пользователи!Видите, как не хватает ваших?</p>
+
+			<div class="catalog__photo--wraaper catalog__photo--panorama">
+				<picture>
+					<source media="(min-width:960px)" srcset='img/panorama-desktop@1x.jpg'>
+					<source media="(min-width:640px)" srcset='img/panorama-tablet@1x.jpg'>
+					<img class="panorama" src="img/panorama-mobile@1x.jpg" alt="панорама">
+				</picture>
+				<span class="panorama-wrapper">Панорама дня</span>
+				<div class="catalog__photo--wrapper catalog__photo--wrapper-panorama">
+				<p class="catalog__photo--name">Анна <span class="catalog__photo--time"> (5 минут назад)</span></p>
+				<b class="catalog__photo--comm">Прыгать или нет? Напишите в коментарии свой совет и смотрите прямую трансляцию в перископе, задавайте свои вопросы!</b>
+				<span class="like">Нравится: 215</span></div>
+			</div>
+<div class="photo-gallery--flex">
+			<div class="catalog__photo--wraaper ">
+				<picture>
+					<source media="(min-width:960px)" srcset='img/photo-1-desktop@1x.jpg'>
+					<source media="(min-width:640px)" srcset='img/photo-1-tablet@1x.jpg'>
+					<img class="photo-gallery" src="img/photo-1-mobile@1x.jpg" alt="">
+				</picture>
+				<div class="catalog__photo--wrapper catalog__photo--wrapper-img">
+				<p class="catalog__photo--name">Левон  <span class="catalog__photo--time"> (5 часов назад)</span></p>
+				<b class="catalog__photo--comm">Вчера он на луну летал, сегодня в руки к нам попал</b>
+				<span class="like--gallery">Нравится: 356</span></div>
+			</div>
+
+			<div class="catalog__photo--wraaper">
+				<picture>
+					<source media="(min-width:960px)" srcset='img/photo-2-desktop@1x.jpg'>
+					<source media="(min-width:640px)" srcset='img/photo-2-tablet@1x.jpg'>
+					<img class="photo-gallery" src="img/photo-2-mobile@1x.jpg" alt="">
+				</picture>
+				<div class="catalog__photo--wrapper
+				catalog__photo--wrapper-img">
+				<p class="catalog__photo--name">Антон <span class="catalog__photo--time"> (12 часов назад)</span></p>
+				<b class="catalog__photo--comm catalog__photo--comm-padding"> 
+Соседи будут рады!</b>
+				<span class="like--gallery">Нравится: 666</span></div>
+			</div>
+
+			<div class="catalog__photo--wraaper">
+				<picture>
+					<source media="(min-width:960px)" srcset='img/photo-3-desktop@1x.jpg'>
+					<source media="(min-width:640px)" srcset='img/photo-3-tablet@1x.jpg'>
+					<img class="photo-gallery" src="img/photo-3-mobile@1x.jpg" alt="">
+				</picture>
+				<div class="catalog__photo--wrapper
+				catalog__photo--wrapper-img">
+				<p class="catalog__photo--name">Борис<span class="catalog__photo--time"> (20 часов назад)</span></p>
+				<b class="catalog__photo--comm">Здесь могла быть ваша цитата о высоком и вечном.</b>
+				<span class="like--gallery">Нравится: 215</span></div>
+			</div>
+
+			<div class="catalog__photo--wraaper">
+				<picture>
+					<source media="(min-width:960px)" srcset='img/photo-4-desktop@1x.jpg'>
+					<source media="(min-width:640px)" srcset='img/photo-4-tablet@1x.jpg'>
+					<img class="photo-gallery" src="img/photo-4-mobile@1x.jpg" alt="">
+				</picture>
+				<div class="catalog__photo--wrapper
+				catalog__photo--wrapper-img">
+				<p class="catalog__photo--name">Сергей<span class="catalog__photo--time"> (25 часов назад)</span></p>
+				<b class="catalog__photo--comm catalog__photo--comm-padding ">Самая кубанская в мире!</b>
+				<span class="like--gallery">Нравится: 4</span></div>
+			</div>
+
+			<div class="catalog__photo--wraaper">
+				<picture>
+					<source media="(min-width:960px)" srcset='img/photo-5-desktop@1x.jpg'>
+					<source media="(min-width:640px)" srcset='img/photo-5-tablet@1x.jpg'>
+					<img class="photo-gallery" src="img/photo-5-mobile@1x.jpg" alt="">
+				</picture>
+				<div class="catalog__photo--wrapper
+				catalog__photo--wrapper-img">
+				<p class="catalog__photo--name">Максим <span class="catalog__photo--time"> (40 часов назад)</span></p>
+				<b class="catalog__photo--comm
+				catalog__photo--comm-margin"> Где снег-то?</b>
+				<span class="like--gallery">Нравится: 150</span></div>
+			</div>
+
+			<div class="catalog__photo--wraaper">
+				<picture>
+					<source media="(min-width:960px)" srcset='img/photo-6-desktop@1x.jpg'>
+					<source media="(min-width:640px)" srcset='img/photo-6-tablet@1x.jpg'>
+					<img class="photo-gallery" src="img/photo-6-mobile@1x.jpg" alt="">
+				</picture>
+				<div class="catalog__photo--wrapper
+				catalog__photo--wrapper-img">
+				<p class="catalog__photo--name">Надежда<span class="catalog__photo--time"> (45 часов назад)</span></p>
+				<b class="catalog__photo--comm
+				catalog__photo--comm-margin">Всем GM и взаимные лайки!</b>
+				<span class=" like--gallery">Нравится:2560 </span></div>
+			</div>
+		</div>
+		</section>
+
+		<section class="app">
+			<p class="app__per">Затмите их всех!<br>Выкладывайте все, что накопилось в телефоне!</p>
+			<div class="app--wrapper">
+				<div class="app-flex">
+						<div class="first-block">
+				<picture>
+					<source media="(min-width:960px)" srcset='img/photo-7-desktop@1x.jpg'>
+					<source media="(min-width:640px)" srcset='img/photo-7-tablet@1x.jpg'>
+					<img class="app-photo" src="img/photo-7-mobile@1x.jpg" alt="">
+				</picture>
+			</div>
+			<div class="second-block">
+				<div class="app-svg">
+					<span class="app-svg--wrapper">
+					<svg class="icon-crop" width="44" height="44">
+						<use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="#icon-crop"></use>
+					</svg>
+					<div class="controls__tablet controls__tablet--one"></div>
+				</span>
+
+<span class="app-svg--wrapper">
+					<svg class="icon-fill" width="48" height="43">
+						<use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="#icon-fill"></use>
+					</svg>
+					<div class="controls__tablet controls__tablet--two"></div>
+				</span>
+
+<span class="app-svg--wrapper">
+					<svg class="icon-editor-contrast" width="32" height="32">
+						<use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="#icon-editor-contrast"></use>
+					</svg>
+					<div class="controls__tablet controls__tablet--three"></div>
+				</span>
+				</div>
+				<div class="controls controls-size">
+					<div class="controls-scale">
+						<div class="controls-toogle controls-toogle-fill"></div>
+					</div>
+				</div>
+				<div class="btn-flex">
+				<button class="btn btn-app--share">Запостить</button>
+				<button class="btn btn-app-cancel">Отменить</button>
+			</div>
+			</div>
+			</div>
+			</div>
+		</section>
+	</main>
+
+	<footer class="page-footer page-footer--form">
+		<div class="page-footer--wrapper">
+			<div class="page-footer__coopyritng">
+			<a class="page-footer__link" href="#">
+				<svg class="icon-logo-fotter" >
+						<use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="#icon-logo-fotter"></use>
+					</svg>
+
+					<svg class="icon-fotter-desk" >
+						<use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="#icon-fotter-desk"></use>
+					</svg>
+			</a>
+			</div>
+			<div class="page-footer__social social">
+			<ul class="page-footer__list">
+				<li class="page-footer__item">
+					<a class="page-footer__item__link page-footer__item__link--tw" href="#">
+						<svg class="icon-twwiter">
+						<use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="#icon-twwiter"></use>
+					</svg>
+
+
+
+					Мы в твиттере</a>
+				</li>
+				<li>
+					<a class="page-footer__item__link page-footer__item__link--fb" href="#">
+						<svg class="icon-facebook">
+						<use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="#icon-facebook"></use>
+					</svg>
+
+
+
+					Мы в фейсбуке</a>
+				</li>
+				<li>
+					<a class="page-footer__item__link page-footer__item__link--yt" href="#">
+						<svg class="icon-youtube">
+						<use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="#icon-youtube"></use>
+					</svg>
+
+
+
+					Мы в ютубе</a>
+				</li>
+				
+			</ul>
+		</div>
+			<div class="page-footer__htmlacademy--wraper">
+			<div class="page-footer__htmlacademy">
+				<span class="page-footer__htmlacademy--dicr">Разработано</span>
+				<a class="page-footer__htmlacademy--logo" href="#">
+					<svg class="icon-html" >
+						<use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="#icon-html"></use>
+					</svg>
+
+				</a>
+			</div>
+		</div>
+		</div>
+		</footer>
+		<script type="text/javascript" src="js/main.js"></script>
+</body>
+</html>
